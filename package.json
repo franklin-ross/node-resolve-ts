@@ -1,0 +1,27 @@
+{
+  "name": "node-resolve-ts",
+  "version": "1.0.0",
+  "description": "NodeJS hook to resolve `.ts` files when the `.js` file doesn't exist, or `.tsx` when the `.jsx` file doesn't exist.",
+  "type": "module",
+  "scripts": {
+    "test": "cd tests; npm run test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "ts",
+    "experimental-strip-types",
+    "resolve"
+  ],
+  "author": "Franklin Ross",
+  "license": "ISC",
+  "files": [
+    "*.js"
+  ],
+  "exports": {
+    "./register": "./register-prefer-ts.js",
+    "./register-prefer-js": "./register-prefer-js.js",
+    "./register-prefer-ts": "./register-prefer-ts.js"
+  }
+}
