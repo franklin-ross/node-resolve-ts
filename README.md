@@ -2,7 +2,7 @@
 
 ## Overview
 
-Actually use `node --experimental-strip-types` to run regular Typescript code by allowing node to resolve `.ts` files when they exist or the `.js` files otherwise.
+Actually use `node --experimental-strip-types` to run regular Typescript code by allowing Node to resolve `.ts` files when it finds a `.js` import extension.
 
 ESM (and therefore Node running ESM) needs the full file extension to resolve relative imports to source files. Since one of Typescript's fundamental philosophies is to [never transform an existing valid JS construct into something else](https://github.com/microsoft/TypeScript/issues/40878#issuecomment-702353715), it also needs the full extension _of the output file_ when using the strict module resolution algorithm, meaning Typescript expects `.js` extensions in imports even when referencing a relative `.ts` source file. Since Node's type striping does nothing to help Node resolve a `.ts` file for a `.js` import specifier, Node will error as soon as it encounters a Typescript ESM import of another Typescript file.
 

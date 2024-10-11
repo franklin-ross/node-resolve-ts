@@ -1,7 +1,7 @@
 {
   "name": "node-resolve-ts",
-  "version": "1.0.0",
-  "description": "NodeJS hook to resolve `.ts` files when the `.js` file doesn't exist, or `.tsx` when the `.jsx` file doesn't exist.",
+  "version": "1.0.1",
+  "description": "NodeJS hook to resolve `.ts` files when a `.js` file is imported so that --experimental-strip-types works",
   "type": "module",
   "scripts": {
     "test": "cd tests; npm run test",

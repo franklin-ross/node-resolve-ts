@@ -26,8 +26,8 @@ export function initialize(extMap) {
 }
 
 /**
- * NodeJS hook to resolve `.ts` files when the `.js` file doesn't exist, or
- * `.tsx` when the `.jsx` file doesn't exist.
+ * NodeJS hook to resolve different file extensions for imports based on the
+ * extension map.
  *
  * Supports `node --experimental-strip-types` where ESM needs extensions and TS
  * expects you to use `.js` extensions, which Node will fail to resolve.
