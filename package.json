@@ -1,6 +1,6 @@
 {
   "name": "node-resolve-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NodeJS hook to resolve `.ts` files when a `.js` file is imported so that --experimental-strip-types works",
   "type": "module",
   "scripts": {
@@ -23,5 +23,9 @@
     "./register": "./register-prefer-ts.js",
     "./register-prefer-js": "./register-prefer-js.js",
     "./register-prefer-ts": "./register-prefer-ts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franklin-ross/node-resolve-ts.git"
   }
 }
