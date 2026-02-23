@@ -1,5 +1,7 @@
 # Node Resolve TypeScript
 
+NOTE: You shouldn't need this anymore, modern Node and TypeScript have sorted themselves out.
+
 ## Overview
 
 Actually use `node --experimental-strip-types` to run regular Typescript code by allowing Node to resolve `.ts` files when it finds a `.js` import extension.
